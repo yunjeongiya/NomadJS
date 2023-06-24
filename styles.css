@@ -1,0 +1,53 @@
+.hidden {
+    display: none;
+}
+
+* {
+    color: #ffffffe3;
+    text-align: center;
+}
+
+#container {
+    color: #ffffffe3;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+#login {
+    width: 300px;
+}
+
+input {
+    /* 디폴트로 있는 상자 안보이게, 그냥흰색 밑줄만 새로 그리기 */
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid;
+    background: none;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: #ffffffe3;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+}
