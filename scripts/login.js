@@ -1,6 +1,6 @@
-const welcome = document.querySelector("#login #welcome");
-const welcomeText = welcome.querySelector("h2");
-const logoutBtn = welcome.querySelector("button");
+const welcome = document.querySelectorAll(".welcome");
+const welcomeText = document.querySelector("#login #welcome");
+const logoutBtn = document.querySelector("#logout");
 
 const loginForm = document.querySelector("#login form");
 const loginInput = document.querySelector("#login input");
@@ -15,14 +15,14 @@ function makeHidden(element) {
 
 function onLogOut() {
     localStorage.removeItem("name");
-    makeHidden(welcome);
+    welcome.forEach(makeHidden);
     makeVisible(loginForm);
     loginInput.value = "";
 }
 logoutBtn.addEventListener("click", onLogOut)
 
 function paintName(name) {
-    makeVisible(welcome);
+    welcome.forEach(makeVisible);
     welcomeText.innerHTML = `Welcome, ${name}!`;
 }
 
