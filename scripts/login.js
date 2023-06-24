@@ -1,5 +1,5 @@
 const welcome = document.querySelectorAll(".welcome");
-const welcomeText = document.querySelector("#login #welcome");
+const welcomeText = document.querySelector("#login h2");
 const logoutBtn = document.querySelector("#logout");
 
 const loginForm = document.querySelector("#login form");
