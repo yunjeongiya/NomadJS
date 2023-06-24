@@ -40,6 +40,11 @@ button {
     cursor: pointer;
 }
 
+ol {
+    list-style: none;
+    padding: 0;
+}
+
 img {
     position:absolute;
     width:100%;
