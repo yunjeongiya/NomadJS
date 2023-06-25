@@ -12,7 +12,14 @@
         </div>
 
         <button id="logout" class="welcome hidden">logout</button>
-        <div id="container">
+        <div id="weather">
+            <div id="city"></div>
+            <div>
+                <img id="weatherIcon"></img>
+                <span id="temperature"></span>
+            </div>
+        </div>
+        <div id="centerContainer">
             <div>
                 <h1 id="clock"> </h1>
             </div>
@@ -24,17 +31,11 @@
                 </form>
             </div>
     
-            <div>
-                <ol id="todolist">
-                    <form>
-                        <input placeholder="New TODO"></input>
-                    </form>
-                </ol>
-            </div>
-    
-            <div>
-    
-            </div>
+            <ol id="todolist">
+                <form>
+                    <input placeholder="New TODO"></input>
+                </form>
+            </ol>
         </div>
 
         <script src="scripts/clock.js"></script>
